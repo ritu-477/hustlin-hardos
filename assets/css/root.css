@@ -30,26 +30,27 @@
     :root {
         --fs-xxxxl: 43px;
         --fs-xxl: 30px;
-
+        --fs-xxxl: 35px;
     }
 }
 @media(min-width:576px) {
     :root {
         --fs-xxxxl: 80px;
         --fs-xxl: 55px;
-
+        --fs-xxxl: 60px;
     }
 }
 @media(min-width:992px) {
     :root {
         --fs-xxxxl: 100px;
         --fs-xxl: 72px;
+        --fs-xxxl: 80px;
 
     }
 }
 @media(min-width:1200px) {
     :root {
         --fs-xxxxl: 157px;
-
+      
     }
 }

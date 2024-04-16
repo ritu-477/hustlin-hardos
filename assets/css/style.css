@@ -181,8 +181,8 @@
     line-height: 83.2px;
     text-align: left;
     text-shadow: 2px 1px 0px #FFFFFF52;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -256,15 +256,26 @@
         border-left: 2px solid var(--fc-black);
         border-right: 2px solid var(--fc-black);
     }
-    .heading-2{
+
+    .heading-2 {
         line-height: 87.8px;
     }
-}
-@media(min-width:992px){
-    .heading-2 {
-            line-height: 100.8px;
+        .latest-twt {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
-                .br-left {
-                    border-left: 2px solid var(--fc-black);
-                }
+        }
+    
+@media(min-width:992px) {
+    .heading-2 {
+        line-height: 100.8px;
+    }
+
+    .br-left {
+        border-left: 2px solid var(--fc-black);
+    }
+    .latest-twt{
+        padding-top: 90px;
+            padding-bottom: 90px;
+    }
 }
