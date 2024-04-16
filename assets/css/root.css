@@ -1,0 +1,27 @@
+:root {
+    /* font-size */
+    --fs-xsm: 10.24px;
+    --fs-sm: 12.8px;
+    --fs-xxmd: 14px;
+    --fs-xmd: 16px;
+    --fs-md: 17px;
+    --fs-xxxlg: 18px;
+    --fs-xxlg: 20px;
+    --fs-xlg: 24px;
+    --fs-lg: 32px;
+    --fs-xl: 36px;
+    --fs-xxl: 72px;
+    --fs-xxxl: 80px;
+    --fs-xxxxl: 157px;
+    /* font-color */
+    --fc-black: #000000;
+    --fc-primary-black: #4d4d4d;
+    --fc-red: #ff0000;
+    --fc-yellow: #ffd600;
+    --fc-green: #00a106;
+    --fc-white: #fff;
+    --fc--primary-white: #f7f1e3;
+    --fc-brown: #70675f;
+    --fc-primary-brown: #a59a90;
+    --fc-green: #d2da60;
+}
