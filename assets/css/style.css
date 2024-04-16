@@ -31,8 +31,6 @@
 
 .sp {
     font-family: 'Noto Serif', sans-serif;
-
-    /* font-family: 'Noto' sans-serif; */
     font-size: var(--fs-xmd);
     font-weight: 400;
     line-height: 21.79px;
@@ -102,12 +100,13 @@
 .max-w1140 {
     max-width: 1140px;
 }
-.about{
+
+.about {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xmd);
-        font-weight: 400;
-        line-height: 21.79px;
-        color: var(--fc-black);
+    font-size: var(--fs-xmd);
+    font-weight: 400;
+    line-height: 21.79px;
+    color: var(--fc-black);
 }
 
 .m-heading {
@@ -118,14 +117,15 @@
     text-align: center;
     text-shadow: 0px 4px 0px #00000040;
     text-shadow: 2px 1px 0px #FFFFFF52;
+    white-space: nowrap;
 }
 
 .heading-2 {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xxl);
     font-weight: 400;
-    line-height: 100.8px;
-    max-width: 1100px;
+    line-height: 50.2px;
+    max-width: 1140px;
     color: var(--fc-black);
     text-shadow: 2px 2px 1px #FFFFFF52;
 }
@@ -247,16 +247,21 @@
     }
 }
 
-@media(min-width:576px){
-        .br-top {
-                border-top: 2px solid var(--fc-black);
-            }
-        
-            .br-bt {
-                border-bottom: 2px solid var(--fc-black);
-            }
-                        .nav-box {
-                            border-left: 2px solid var(--fc-black);
-                            border-right: 2px solid var(--fc-black);
-                        }
+@media(min-width:576px) {
+    .br-top {
+        border-top: 2px solid var(--fc-black);
+    }
+
+    .br-bt {
+        border-bottom: 2px solid var(--fc-black);
+    }
+
+    .nav-box {
+        border-left: 2px solid var(--fc-black);
+        border-right: 2px solid var(--fc-black);
+    }
+    .heading-2{
+        line-height: 100.8px;
+    }
 }
+@media(min-width:576px)
