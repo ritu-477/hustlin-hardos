@@ -18,51 +18,52 @@ iconbox.addEventListener('click', function () {
 
 
 
-// $('.nav-slider').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 200,
-//     autoplay: true,
-//     slidesToShow: 0,
-//     slidesToScroll: 0,
-//     nextArrow: "",
-//     prevArrow: "",
-//     responsive: [
-//         {
-//             breakpoint: 1440,
-//             settings: {
-//                 slidesToShow: 0,
-//                 slidesToScroll: 0,
-//                 infinite: true,
-//                 dots: true
-//             }
-//         },
-//         {
-//             breakpoint: 1200,
-//             settings: {
-//                 slidesToShow: 0,
-//                 slidesToScroll: 0,
-//                 infinite: true,
-//                 dots: true
-//             }
-//         },
-//         {
-//             breakpoint: 1050,
-//             settings: {
-//                 slidesToShow: 0,
-//                 slidesToScroll: 0,
-//             }
-//         },
+$('.responsive1').slick({
+    dots: true,
+    infinite: true,
+    speed: 200,
+    autoplay: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: ".next-arrow",
+    prevArrow: ".prew-arrow",
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
 
-//         {
-//             breakpoint: 768,
-//             settings: {
-//                 slidesToShow: 0,
-//                 slidesToScroll: 0,
-//                 dots: true,
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
 
-//             }
-//         },
+            }
+            
+        },
 
-//     ]
-// });
+    ]
+});
