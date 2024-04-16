@@ -139,10 +139,6 @@
     padding-bottom: 64px;
 }
 
-.br-left {
-    border-left: 2px solid var(--fc-black);
-}
-
 .hardo-editor {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xmd);
@@ -261,7 +257,14 @@
         border-right: 2px solid var(--fc-black);
     }
     .heading-2{
-        line-height: 100.8px;
+        line-height: 87.8px;
     }
 }
-@media(min-width:576px)
+@media(min-width:992px){
+    .heading-2 {
+            line-height: 100.8px;
+        }
+                .br-left {
+                    border-left: 2px solid var(--fc-black);
+                }
+}
