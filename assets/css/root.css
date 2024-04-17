@@ -30,7 +30,7 @@
     :root {
         --fs-xxxxl: 43px;
         --fs-xxl: 30px;
-        --fs-xxxl: 26px;
+        --fs-xxxl: 28px;
     }
 }
 @media(min-width:576px) {

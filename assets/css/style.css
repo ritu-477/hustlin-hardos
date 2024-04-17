@@ -334,12 +334,87 @@
     color: var(--fc-black);
     padding-bottom: 12px;
 }
-.counting{
+
+.counting {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xl);
-        font-weight: 600;
-        line-height: 39.85px;
-        color: var(--fc-black);
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    line-height: 39.85px;
+    color: var(--fc-black);
+}
+/* ...........................timeline-section..................... */
+.timeline {
+    position: relative;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color:var(--fc-black);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container1 {
+    padding: 0 0 0 45px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    right: -31px;
+    background-image: url("../images/timelinecircle.png");
+    top: -8px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -31px;
+}
+
+/* The actual content */
+.content {
+    padding: 0 10px 0 20px;
+    /* background-color: white; */
+    position: relative;
+    border-radius: 6px;
+}
+.br-left2{
+    border-left: 2px solid var(--fc-black);
+}
+.br-right2{
+    border-right: 2px solid var(--fc-black);
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-78{
+    padding-bottom: 78px;
 }
 
 
@@ -395,6 +470,39 @@
         right: 0;
     }
 }
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) { 
+
+    .timeline::after {
+        left: 50px;
+    }
+
+    /* Full-width containers */
+    .container1 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+} 
 
 @media(min-width:576px) {
     .br-top {
