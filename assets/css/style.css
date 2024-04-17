@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'Perpetua Titling MT';
+    font-family: 'Perpetua Titling MT',sans-serif;
     src: url("../font/perputa-mt/font-map-perpetua-titling-mt.png");
 }
 
@@ -72,7 +72,7 @@
 }
 
 .hustlin {
-    font-family: 'ModernoFBComp', sans-serif;
+    font-family: 'ModernoFBComp',sans-serif;
     font-size: var(--fs-xlg);
     font-weight: 400;
     line-height: 28.8px;
@@ -115,8 +115,8 @@
     font-weight: 400;
     line-height: 188.4px;
     text-align: center;
-    text-shadow: 0px 4px 0px #00000040;
-    text-shadow: 2px 1px 0px #FFFFFF52;
+    text-shadow: 0px 4px 0px var(--fc-black-shadow);
+    text-shadow: 2px 1px 0px var(--fc-primary-brown-shadow);
     white-space: nowrap;
 }
 
@@ -127,7 +127,7 @@
     line-height: 50.2px;
     max-width: 1140px;
     color: var(--fc-black);
-    text-shadow: 2px 2px 1px #FFFFFF52;
+    text-shadow: 2px 2px 1px var(--fc-primary-brown-shadow);
 }
 
 .line-bt {
@@ -175,12 +175,12 @@
 
 /* ........................slider-section........................*/
 .latest-twt {
-    font-family: 'Perpetua Titling MT';
+    font-family: 'Perpetua Titling MT'sans-serif;
     font-size: var(--fs-xxxl);
     font-weight: 300;
     line-height: 83.2px;
     text-align: left;
-    text-shadow: 3px 3px 3px #FFFFFF52;
+    text-shadow: 3px 3px 3px var(--fc-primary-brown-shadow);
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -471,9 +471,13 @@
 /* .............................team-slider-section............ */
 .slider-box1 {
     background-image: url("../images/sliderbg-image.png");
-    padding-top: 55px;
-    padding-bottom: 55px;
-
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.slider-box2{
+    background-image: url("../images/sliderbg-image.png");
+    padding-top: 45px;
+        padding-bottom: 45px;
 }
 
 .executive {
@@ -482,7 +486,8 @@
     font-weight: 900;
     line-height: 49.03px;
     color: var(--fc-brown);
-    text-shadow: -1px -1px 1px 0px #0000004D;
+    text-shadow: -1px -1px 1px var(--fc-black-shadow);
+    padding-top: 16px;
 }
 
 .crypto {
@@ -492,6 +497,16 @@
     line-height: 21.79px;
     max-width: 407px;
     color: var(--fc-black);
+}
+
+.johnny{
+    font-family: 'Noto Serif', sans-serif;
+        font-size: var(--fs-xl);
+        font-weight: 900;
+        line-height: 49.03px;
+        text-shadow: -1px -1px 1px var(--fc-black-shadow);
+        color: var(--fc-primary-brown);
+        padding-top: 16px;
 }
 
 /* #slider2 .slick-dots {

@@ -48,7 +48,7 @@ $('.responsive1').slick({
     dots: true,
     infinite: true,
     speed: 200,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".next-arrow",
@@ -100,8 +100,8 @@ $('.responsive2').slick({
     autoplay: false,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: ".next-arrow",
-    prevArrow: ".prew-arrow",
+    nextArrow: ".next1-arrow",
+    prevArrow: ".prew1-arrow",
     responsive: [
         {
             breakpoint: 1440,
