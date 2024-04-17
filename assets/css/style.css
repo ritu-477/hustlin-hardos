@@ -153,7 +153,7 @@
     font-weight: 400;
     line-height: 27px;
     color: var(--fc-black);
-    
+
 }
 
 .read-btn {
@@ -342,6 +342,7 @@
     line-height: 39.85px;
     color: var(--fc-black);
 }
+
 .para-2 {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xxxlg);
@@ -458,16 +459,44 @@
     bottom: 0;
     position: absolute;
 }
+
 .para-3 {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xxxlg);
     font-weight: 400;
     line-height: 27px;
     color: var(--fc-black);
+}
+
+/* .............................team-slider-section............ */
+.slider-box1 {
+    background-image: url("../images/sliderbg-image.png");
+    padding-top: 55px;
+    padding-bottom: 55px;
 
 }
 
+.executive {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    line-height: 49.03px;
+    color: var(--fc-brown);
+    text-shadow: -1px -1px 1px 0px #0000004D;
+}
 
+.crypto {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xmd);
+    font-weight: 400;
+    line-height: 21.79px;
+    max-width: 407px;
+    color: var(--fc-black);
+}
+
+/* #slider2 .slick-dots {
+    background: green
+} */
 
 
 
@@ -613,14 +642,16 @@
         padding-top: 90px;
         padding-bottom: 90px;
     }
-    
-  .para-1{
+
+    .para-1 {
         max-width: 475px;
     }
-    .para-2{
+
+    .para-2 {
         max-width: 438px;
     }
-        .para-3 {
-            max-width: 495px;
-        }
+
+    .para-3 {
+        max-width: 495px;
+    }
 }

@@ -48,7 +48,7 @@ $('.responsive1').slick({
     dots: true,
     infinite: true,
     speed: 200,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".next-arrow",
@@ -89,6 +89,55 @@ $('.responsive1').slick({
 
             }
             
+        },
+
+    ]
+});
+$('.responsive2').slick({
+    dots: true,
+    infinite: true,
+    speed: 200,
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: ".next-arrow",
+    prevArrow: ".prew-arrow",
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+
+            }
+
         },
 
     ]

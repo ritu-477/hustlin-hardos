@@ -9,10 +9,10 @@
     --fs-xxlg: 20px;
     --fs-xlg: 24px;
     --fs-lg: 32px;
-    --fs-xl: 36px;
-    --fs-xxl: 72px;
-    --fs-xxxl: 80px;
-    --fs-xxxxl: 157px;
+    --fs-xl: 19px;
+    --fs-xxl: 30px;
+    --fs-xxxl: 28px;
+    --fs-xxxxl: 43px;
     /* font-color */
     --fc-black: #000000;
     --fc-primary-black: #4d4d4d;
@@ -26,14 +26,6 @@
 
 }
 
-@media(min-width:320px) {
-    :root {
-        --fs-xxxxl: 43px;
-        --fs-xxl: 30px;
-        --fs-xxxl: 28px;
-        --fs-xl: 19px;
-    }
-}
 
 @media(min-width:576px) {
     :root {
