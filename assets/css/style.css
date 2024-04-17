@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: 'Perpetua Titling MT', sans-serif;
-    src: url(../font/perputa-mt/PERTILI.TTF);
+    font-family: 'Perpetua Titling MT';
+    src: url("../font/perputa-mt/font-map-perpetua-titling-mt.png");
 }
 
 .body-bgimage {
@@ -148,7 +148,7 @@
 }
 
 .para-1 {
-    font-family: 'Noto', Serif;
+    font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xxxlg);
     font-weight: 400;
     line-height: 27px;
@@ -175,12 +175,12 @@
 
 /* ........................slider-section........................*/
 .latest-twt {
-    font-family: 'Perpetua Titling MT', sans-serif;
+    font-family: 'Perpetua Titling MT';
     font-size: var(--fs-xxxl);
     font-weight: 300;
     line-height: 83.2px;
     text-align: left;
-    text-shadow: 2px 1px 0px #FFFFFF52;
+    text-shadow: 3px 3px 3px #FFFFFF52;
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -188,8 +188,8 @@
 
 .slider-box {
     padding: 48px 27px;
-    max-width: 372px;
-    min-height: 284px;
+    width: 372px;
+    height: 284px;
 }
 
 .br-left1 {
@@ -244,18 +244,103 @@
 .slick-dotted.slick-slider {
     margin-bottom: 0 !important;
 }
-.slick-dots{
+
+.slick-dots {
     display: none !important;
 }
-.slick-slide{
+
+.slick-slide {
     height: inherit !important;
 }
-.slick-slide>div {
+
+/* .slick-slide>div {
     display: flex;
+} */
+
+/* .............................................minting-section............ */
+.value-box {
+    border: 2px solid var(--fc-black);
+    /* padding: 2px 24px; */
+    width: 238px;
+    height: 53px;
 }
 
+.de-box {
+    padding: 2px 24px;
+    background: transparent;
+    color: var(--fc-black);
+    font-size: var(--fs-xxmd);
+    font-weight: bold;
+    border-top: 2px solid var(--fc-black);
+    border-bottom: 2px solid var(--fc-black);
+    border-left: 2px solid var(--fc-black);
+}
 
+.in-box {
+    padding: 2px 24px;
+    padding-left: 24px;
+    background: transparent;
+    color: var(--fc-black);
+    font-size: var(--fs-xxmd);
+    font-weight: bold;
+    border-top: 2px solid var(--fc-black);
+    border-bottom: 2px solid var(--fc-black);
+    border-right: 2px solid var(--fc-black);
+}
 
+.current-value {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    line-height: 49.03px;
+    border: 2px solid var(--fc-black);
+    padding: 2px 24px;
+    width: 109px;
+    height: 53px
+}
+
+.mint-btn {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xxmd);
+    font-weight: 600;
+    line-height: 19.07px;
+    color: var(--fc-black);
+    background: var(--fc-yellow);
+    border: 2px solid var(--fc-black);
+    padding: 12px 16px;
+    margin-top: 35px;
+    transition: 1s;
+}
+
+.mint-btn:hover {
+    color: var(--fc-yellow);
+    background: var(--fc-black);
+}
+
+.time-left {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xxxlg);
+    font-weight: 600;
+    line-height: 24.52px;
+    color: var(--fc-green);
+    padding-top: 36px;
+}
+
+.eget {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xlg);
+    font-weight: 400;
+    line-height: 26.57px;
+    color: var(--fc-black);
+    padding-bottom: 12px;
+}
+.counting{
+    font-family: 'Noto Serif', sans-serif;
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        line-height: 39.85px;
+        color: var(--fc-black);
+}
 
 
 
@@ -338,7 +423,7 @@
         stroke-width: 4;
     }
 
-    .next-arrow svg path{
+    .next-arrow svg path {
         stroke-width: 4;
     }
 }

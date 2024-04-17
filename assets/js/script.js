@@ -8,6 +8,32 @@ iconbox.addEventListener('click', function () {
     document.body.classList.toggle("overflow-hidden")
 });
 
+const buttonInc = document.querySelector("#increment");
+const buttonDec = document.querySelector("#decrement");
+const counter = document.querySelector("#counter");
+
+// ............counter-value.............................
+let model = new Proxy(
+    { value: 0 },
+    {
+        set(obj, prop, newval) {
+            obj[prop] = newval;
+
+            if (prop === "value") {
+                counter.innerText = obj[prop];
+            }
+        }
+    }
+);
+
+buttonInc.addEventListener("click", () => {
+    model.value += 1;
+});
+
+buttonDec.addEventListener("click", () => {
+    
+    model.value -= 1;
+});
 
 
 
@@ -40,14 +66,14 @@ $('.responsive1').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,

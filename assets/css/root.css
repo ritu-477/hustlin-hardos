@@ -18,12 +18,12 @@
     --fc-primary-black: #4d4d4d;
     --fc-red: #ff0000;
     --fc-yellow: #ffd600;
-    --fc-green: #00a106;
+    --fc-green: #00A106;
     --fc-white: #fff;
     --fc--primary-white: #f7f1e3;
     --fc-brown: #70675f;
     --fc-primary-brown: #a59a90;
-    --fc-green: #d2da60;
+
 }
 
 @media(min-width:320px) {
