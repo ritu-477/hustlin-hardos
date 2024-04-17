@@ -31,15 +31,19 @@
         --fs-xxxxl: 43px;
         --fs-xxl: 30px;
         --fs-xxxl: 28px;
+        --fs-xl: 19px;
     }
 }
+
 @media(min-width:576px) {
     :root {
         --fs-xxxxl: 80px;
         --fs-xxl: 55px;
         --fs-xxxl: 60px;
+        --fs-xl: 36px;
     }
 }
+
 @media(min-width:992px) {
     :root {
         --fs-xxxxl: 100px;
@@ -48,9 +52,10 @@
 
     }
 }
+
 @media(min-width:1200px) {
     :root {
         --fs-xxxxl: 157px;
-      
+
     }
 }
