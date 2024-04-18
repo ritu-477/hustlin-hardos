@@ -484,12 +484,14 @@
     background-image: url("../images/sliderbg-image.png");
     padding-top: 56px;
     padding-bottom: 56px;
+    height: 326px;
 }
 
 .slider-box2 {
     background-image: url("../images/sliderbg-image.png");
     padding-top: 45px;
     padding-bottom: 45px;
+    height: 326px;
 }
 
 .executive {
