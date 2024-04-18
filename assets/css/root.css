@@ -4,10 +4,9 @@
     --fs-sm: 12.8px;
     --fs-xxmd: 14px;
     --fs-xmd: 16px;
-    --fs-md: 17px;
     --fs-xxxlg: 18px;
     --fs-xxlg: 20px;
-    --fs-xlg: 24px;
+    --fs-xlg: 17px;
     --fs-lg: 32px;
     --fs-xl: 19px;
     --fs-xxl: 30px;
@@ -35,6 +34,8 @@
         --fs-xxl: 55px;
         --fs-xxxl: 60px;
         --fs-xl: 36px;
+        --fs-xlg: 20px;
+        --fs-xxmd: 18px;
     }
 }
 
@@ -43,7 +44,7 @@
         --fs-xxxxl: 100px;
         --fs-xxl: 72px;
         --fs-xxxl: 80px;
-
+        --fs-xlg: 24px;
     }
 }
 

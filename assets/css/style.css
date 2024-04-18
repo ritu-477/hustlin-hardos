@@ -113,7 +113,7 @@
     font-family: 'ModernoFBComp', sans-serif;
     font-size: var(--fs-xxxxl);
     font-weight: 400;
-    line-height: 188.4px;
+    line-height: 68.4px;
     text-align: center;
     text-shadow: 5px 0px 2px var(--fc-black-shadow);
     -webkit-text-stroke: 1px var(--fc-primary-brown-shadow);
@@ -137,8 +137,8 @@
 }
 
 .py-64 {
-    padding-top: 67px;
-    padding-bottom: 64px;
+    padding-top: 45px;
+    padding-bottom: 47px;
 }
 
 .hardo-editor {
@@ -181,8 +181,8 @@
     font-size: var(--fs-xxxl);
     font-weight: 300;
     line-height: 83.2px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-text-stroke: 2px 2px 1px var(--fc-primary-brown-shadow);
     text-shadow: 3px 0px 2px var(--fc-black-shadow1);
     color: var(--fc-black);
@@ -197,8 +197,8 @@
     text-shadow: 3px 3px 3px var(--fc-primary-brown-shadow);
     -webkit-text-stroke: 2px 2px 1px var(--fc-primary-brown-shadow);
     text-shadow: 3px 0px 2px var(--fc-black-shadow1);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: var(--fc-black);
 }
 
@@ -334,7 +334,7 @@
     font-weight: 600;
     line-height: 24.52px;
     color: var(--fc-green);
-    padding-top: 36px;
+    padding-top: 20px;
 }
 
 .eget {
@@ -367,7 +367,7 @@
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xl);
     font-weight: 600;
-    line-height: 49.03px;
+    line-height: 30.03px;
     color: var(--fc-red);
 }
 
@@ -473,7 +473,7 @@
 
 .para-3 {
     font-family: 'Noto Serif', sans-serif;
-    font-size: var(--fs-xxxlg);
+    font-size: var(--fs-xxmd);
     font-weight: 400;
     line-height: 27px;
     color: var(--fc-black);
@@ -529,20 +529,12 @@
 }
 
 .accordion-item {
-    padding: 32px 41px 43px 30px;
+    padding: 16px 20px 21px 15px;
     border-bottom: 2px solid var(--fc-black);
     color: var(--bs-accordion-color);
     background-color: transparent;
     border-top: none !important;
     border-radius: none !important;
-}
-
-.accordion-heading {
-    font-family: 'Noto Serif', sans-serif;
-    font-size: var(--fs-xlg);
-    font-weight: 600;
-    line-height: 32.69px;
-    color: var(--fc-black);
 }
 
 .accordion-body {
@@ -560,17 +552,19 @@
 }
 
 .accordion-button {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xlg);
+    font-weight: 600;
+    line-height: 32.69px;
+    color: var(--fc-black);
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
     padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: var(--fs-xlg);
-    color: var(--fc-black);
-    text-align: left;
     background-color: transparent !important;
     border: none !important;
-    border-radius: none;
+    border-radius: none !important;
     overflow-anchor: none;
     transition: var(--bs-accordion-transition);
 
@@ -645,12 +639,16 @@
     transform: translateY(5px);
 }
 
+.br-bt {
+    border-bottom: 2px solid var(--fc-black);
+}
+
 
 /*............................................. media-quires...................................... */
 @media(max-width:576px) {
     .iconbox {
         width: 30px;
-        height: 30px;
+        height: 25px;
         position: relative;
         flex-direction: column;
         display: flex;
@@ -733,9 +731,6 @@
         border-top: 2px solid var(--fc-black);
     }
 
-    .br-bt {
-        border-bottom: 2px solid var(--fc-black);
-    }
 
     .nav-box {
         border-left: 2px solid var(--fc-black);
@@ -766,6 +761,27 @@
 
     .community {
         line-height: 39.85px;
+    }
+
+    .accordion-item {
+        padding: 32px 41px 43px 30px;
+    }
+
+    .m-heading {
+        line-height: 100.4px;
+    }
+
+    .py-64 {
+        padding-top: 67px;
+        padding-bottom: 64px;
+    }
+
+    .time-left {
+        padding-top: 36px;
+    }
+
+    .timer {
+        line-height: 49.03px;
     }
 }
 
@@ -798,5 +814,15 @@
 
     .para-3 {
         max-width: 495px;
+    }
+
+    .m-heading {
+        line-height: 120px;
+    }
+}
+
+@media(min-width:1200px) {
+    .m-heading {
+        line-height: 188.4px;
     }
 }

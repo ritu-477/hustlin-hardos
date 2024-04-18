@@ -10,31 +10,17 @@ iconbox.addEventListener('click', function () {
 
 // ............counter-value.............................
 
-const buttonInc = document.querySelector("#increment");
-const buttonDec = document.querySelector("#decrement");
-const counter = document.querySelector("#counter");
+const value = document.getElementById("value");
+let counter = 100;
+function increment() {
+    counter = counter + 1;
+    document.getElementById('counter').innerHTML = counter;
+}
+function decrement() {
+    counter = counter - 1;
+    document.getElementById('counter').innerHTML = counter;
+}
 
-let model = new Proxy(
-    { value: 0 },
-    {
-        set(obj, prop, newval) {
-            obj[prop] = newval;
-
-            if (prop === "value") {
-                counter.innerText = obj[prop];
-            }
-        }
-    }
-);
-
-buttonInc.addEventListener("click", () => {
-    model.value += 1;
-});
-
-buttonDec.addEventListener("click", () => {
-
-    model.value -= 1;
-});
 
 // timer//
 function countdown(endDate) {
@@ -50,14 +36,12 @@ function countdown(endDate) {
     );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-    const milliseconds = difference % 1000;
 
     return {
         days,
         hours,
         minutes,
         seconds,
-        milliseconds,
     };
 }
 
@@ -91,7 +75,7 @@ $('.responsive1').slick({
     dots: true,
     infinite: true,
     speed: 200,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".next-arrow",
@@ -140,7 +124,7 @@ $('.responsive2').slick({
     dots: true,
     infinite: true,
     speed: 200,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     nextArrow: ".next1-arrow",
