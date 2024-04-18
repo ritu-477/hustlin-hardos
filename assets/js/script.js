@@ -33,7 +33,7 @@ buttonInc.addEventListener("click", () => {
 });
 
 buttonDec.addEventListener("click", () => {
-    
+
     model.value -= 1;
 });
 
@@ -90,7 +90,7 @@ $('.responsive1').slick({
                 dots: true,
 
             }
-            
+
         },
 
     ]

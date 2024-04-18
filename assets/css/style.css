@@ -72,7 +72,7 @@
 }
 
 .hustlin {
-    font-family: 'ModernoFBComp',sans-serif;
+    font-family: 'ModernoFBComp', sans-serif;
     font-size: var(--fs-xlg);
     font-weight: 400;
     line-height: 28.8px;
@@ -116,7 +116,7 @@
     line-height: 188.4px;
     text-align: center;
     text-shadow: 5px 0px 2px var(--fc-black-shadow);
-    -webkit-text-stroke:  1px var(--fc-primary-brown-shadow);
+    -webkit-text-stroke: 1px var(--fc-primary-brown-shadow);
     white-space: nowrap;
     color: var(--fc-black);
 }
@@ -177,15 +177,29 @@
 
 /* ........................slider-section........................*/
 .latest-twt {
-    font-family: 'Perpetua Titling MT',sans-serif;
+    font-family: 'Perpetua Titling MT', sans-serif;
     font-size: var(--fs-xxxl);
     font-weight: 300;
     line-height: 83.2px;
-    text-align: left;
-    text-shadow: 3px 3px 3px var(--fc-primary-brown-shadow);
     padding-top: 30px;
     padding-bottom: 30px;
+    -webkit-text-stroke: 2px 2px 1px var(--fc-primary-brown-shadow);
+    text-shadow: 3px 0px 2px var(--fc-black-shadow1);
+    color: var(--fc-black);
 
+}
+
+.latest-twt1 {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-xxxl);
+    font-weight: 400;
+    line-height: 83.2px;
+    text-shadow: 3px 3px 3px var(--fc-primary-brown-shadow);
+    -webkit-text-stroke: 2px 2px 1px var(--fc-primary-brown-shadow);
+    text-shadow: 3px 0px 2px var(--fc-black-shadow1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--fc-black);
 }
 
 .slider-box {
@@ -255,14 +269,9 @@
     height: inherit !important;
 }
 
-/* .slick-slide>div {
-    display: flex;
-} */
-
 /* .............................................minting-section............ */
 .value-box {
     border: 2px solid var(--fc-black);
-    /* padding: 2px 24px; */
     width: 238px;
     height: 53px;
 }
@@ -361,7 +370,6 @@
     margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -373,7 +381,6 @@
     margin-left: -3px;
 }
 
-/* Container around content */
 .container1 {
     padding: 0 0 0 45px;
     position: relative;
@@ -381,7 +388,6 @@
     width: 50%;
 }
 
-/* The circles on the timeline */
 .container1::after {
     content: '';
     position: absolute;
@@ -394,25 +400,20 @@
     z-index: 1;
 }
 
-/* Place the container to the left */
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
 .right {
     left: 50%;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
     left: -31px;
 }
 
-/* The actual content */
 .content {
     padding: 0 15px 0 20px;
-    /* background-color: white; */
     position: relative;
     border-radius: 6px;
 }
@@ -476,10 +477,11 @@
     padding-top: 56px;
     padding-bottom: 56px;
 }
-.slider-box2{
+
+.slider-box2 {
     background-image: url("../images/sliderbg-image.png");
     padding-top: 45px;
-        padding-bottom: 45px;
+    padding-bottom: 45px;
 }
 
 .executive {
@@ -501,49 +503,52 @@
     color: var(--fc-black);
 }
 
-.johnny{
+.johnny {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xl);
-        font-weight: 900;
-        line-height: 49.03px;
-        text-shadow: -1px -1px 1px var(--fc-black-shadow);
-        color: var(--fc-primary-brown);
-        padding-top: 16px;
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    line-height: 49.03px;
+    text-shadow: -1px -1px 1px var(--fc-black-shadow);
+    color: var(--fc-primary-brown);
+    padding-top: 16px;
 }
 
 /* ....................................accordion............................... */
-.accordion{
- border-left: 2px solid var(--fc-black);
- border-right: 2px solid var(--fc-black);
- --bs-accordion-border-radius: none !important;
+.accordion {
+    border-left: 2px solid var(--fc-black);
+    border-right: 2px solid var(--fc-black);
+    --bs-accordion-border-radius: none !important;
 }
-.accordion-item{
+
+.accordion-item {
     padding: 32px 41px 43px 30px;
     border-bottom: 2px solid var(--fc-black);
     color: var(--bs-accordion-color);
-        background-color: transparent;
-        border-top: none !important;
-        border-radius: none !important; 
-    }
+    background-color: transparent;
+    border-top: none !important;
+    border-radius: none !important;
+}
 
-.accordion-heading{
+.accordion-heading {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xlg);
-        font-weight: 600;
-        line-height: 32.69px;
-        color: var(--fc-black);
+    font-size: var(--fs-xlg);
+    font-weight: 600;
+    line-height: 32.69px;
+    color: var(--fc-black);
 }
-.accordion-body{
+
+.accordion-body {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xmd);
-        font-weight: 400;
-        line-height: 24px;
-        max-width: 992px;
+    font-size: var(--fs-xmd);
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 992px;
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
     color: var(--fc-black) !important;
-        background-color: transparent !important;
-        box-shadow: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 .accordion-button {
@@ -560,20 +565,23 @@
     border-radius: none;
     overflow-anchor: none;
     transition: var(--bs-accordion-transition);
-    
+
 }
+
 .accordion-item:first-of-type {
     border-top-left-radius: none !important;
     border-top-right-radius: none !important;
 }
+
 .accordion-item:last-of-type {
-    border-bottom-right-radius:none!important ;
+    border-bottom-right-radius: none !important;
     border-bottom-left-radius: none !important;
 }
-.accordion-button:not(.collapsed)::after{
-         background-image: url("../images/accordian-icon.svg");
-        transform: var(--bs-accordion-btn-icon-transform);
-    }
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/accordian-icon.svg");
+    transform: var(--bs-accordion-btn-icon-transform);
+}
 
 .accordion-button::after {
     position: absolute;
@@ -586,13 +594,23 @@
     background-size: none !important;
     transition: none !important;
 }
-.accordion-button:focus{
+
+.accordion-button:focus {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
 }
-
-
+.br-none{
+    border-bottom: none;
+}
+/* .............................footer........................................... */
+.text-clr{
+    color: var(--fc-black);
+}
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
 
 
 
@@ -645,21 +663,19 @@
     }
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media queries - Responsive timeline on screens less than 992px wide */
 @media screen and (max-width: 992px) {
 
     .timeline::after {
         left: 50px;
     }
 
-    /* Full-width containers */
     .container1 {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    /* Make sure that all arrows are pointing leftwards */
     .container1::before {
         left: 60px;
         border: medium solid white;
@@ -667,13 +683,11 @@
         border-color: transparent white transparent transparent;
     }
 
-    /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
         left: 18px;
     }
 
-    /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
     }
@@ -710,6 +724,11 @@
         padding-bottom: 50px;
     }
 
+    .latest-twt1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .prew-arrow svg path {
         stroke-width: 4;
     }
@@ -733,6 +752,11 @@
     }
 
     .latest-twt {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .latest-twt1 {
         padding-top: 90px;
         padding-bottom: 90px;
     }
