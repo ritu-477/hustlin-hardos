@@ -1,5 +1,4 @@
 
-
 const iconbox = document.querySelector('.iconbox')
 const menulist = document.querySelector('.menulist')
 
@@ -37,14 +36,40 @@ buttonDec.addEventListener("click", () => {
     model.value -= 1;
 });
 
+// timer//
+function countdown(endDate) {
+    //  current date and time
+    const now = new Date().getTime();
 
+    //difference between the end date and the current date
+    const difference = endDate - now;
 
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    const milliseconds = difference % 1000;
 
+    return {
+        days,
+        hours,
+        minutes,
+        seconds,
+        milliseconds,
+    };
+}
 
+const endDate = new Date("2024-05-01").getTime();
+setInterval(function () {
+    const remainingTime = countdown(endDate);
+    document.querySelector(
+        ".timer"
+    ).innerHTML = `${remainingTime.days}: ${remainingTime.hours}: ${remainingTime.minutes}: ${remainingTime.seconds}`;
+}, 1000);
 
-
-
-
+// slider////////////////
 
 $('.responsive1').slick({
     dots: true,
