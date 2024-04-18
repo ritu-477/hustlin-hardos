@@ -298,6 +298,9 @@
     border-bottom: 2px solid var(--fc-black);
     border-right: 2px solid var(--fc-black);
 }
+.curser{
+    cursor: pointer;
+}
 
 .current-value {
     font-family: 'Noto Serif', sans-serif;
@@ -491,7 +494,7 @@
     background-image: url("../images/sliderbg-image.png");
     padding-top: 45px;
     padding-bottom: 45px;
-    height: 326px;
+     height: 326px;
 }
 
 .executive {
