@@ -8,11 +8,13 @@ iconbox.addEventListener('click', function () {
     document.body.classList.toggle("overflow-hidden")
 });
 
+
+// ............counter-value.............................
+
 const buttonInc = document.querySelector("#increment");
 const buttonDec = document.querySelector("#decrement");
 const counter = document.querySelector("#counter");
 
-// ............counter-value.............................
 let model = new Proxy(
     { value: 0 },
     {

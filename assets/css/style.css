@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'Perpetua Titling MT',sans-serif;
+    font-family: 'Perpetua Titling MT';
     src: url("../font/perputa-mt/font-map-perpetua-titling-mt.png");
 }
 
@@ -115,9 +115,10 @@
     font-weight: 400;
     line-height: 188.4px;
     text-align: center;
-    text-shadow: 0px 4px 0px var(--fc-black-shadow);
-    text-shadow: 2px 1px 0px var(--fc-primary-brown-shadow);
+    text-shadow: 5px 0px 2px var(--fc-black-shadow);
+    -webkit-text-stroke:  1px var(--fc-primary-brown-shadow);
     white-space: nowrap;
+    color: var(--fc-black);
 }
 
 .heading-2 {
@@ -127,7 +128,8 @@
     line-height: 50.2px;
     max-width: 1140px;
     color: var(--fc-black);
-    text-shadow: 2px 2px 1px var(--fc-primary-brown-shadow);
+    -webkit-text-stroke: 1px var(--fc-primary-brown-shadow);
+    text-shadow: 3px 0px 2px var(--fc-black-shadow);
 }
 
 .line-bt {
@@ -175,7 +177,7 @@
 
 /* ........................slider-section........................*/
 .latest-twt {
-    font-family: 'Perpetua Titling MT'sans-serif;
+    font-family: 'Perpetua Titling MT',sans-serif;
     font-size: var(--fs-xxxl);
     font-weight: 300;
     line-height: 83.2px;
@@ -509,9 +511,86 @@
         padding-top: 16px;
 }
 
-/* #slider2 .slick-dots {
-    background: green
-} */
+/* ....................................accordion............................... */
+.accordion{
+ border-left: 2px solid var(--fc-black);
+ border-right: 2px solid var(--fc-black);
+ --bs-accordion-border-radius: none !important;
+}
+.accordion-item{
+    padding: 32px 41px 43px 30px;
+    border-bottom: 2px solid var(--fc-black);
+    color: var(--bs-accordion-color);
+        background-color: transparent;
+        border-top: none !important;
+        border-radius: none !important; 
+    }
+
+.accordion-heading{
+    font-family: 'Noto Serif', sans-serif;
+        font-size: var(--fs-xlg);
+        font-weight: 600;
+        line-height: 32.69px;
+        color: var(--fc-black);
+}
+.accordion-body{
+    font-family: 'Noto Serif', sans-serif;
+        font-size: var(--fs-xmd);
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 992px;
+}
+.accordion-button:not(.collapsed){
+    color: var(--fc-black) !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: var(--fs-xlg);
+    color: var(--fc-black);
+    text-align: left;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: none;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+    
+}
+.accordion-item:first-of-type {
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius:none!important ;
+    border-bottom-left-radius: none !important;
+}
+.accordion-button:not(.collapsed)::after{
+         background-image: url("../images/accordian-icon.svg");
+        transform: var(--bs-accordion-btn-icon-transform);
+    }
+
+.accordion-button::after {
+    position: absolute;
+    right: 0;
+    flex-shrink: 0;
+    margin-left: auto;
+    content: "";
+    background-image: url("../images/acoordian-plusicon.svg");
+    background-repeat: no-repeat;
+    background-size: none !important;
+    transition: none !important;
+}
+.accordion-button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
 
 
 
