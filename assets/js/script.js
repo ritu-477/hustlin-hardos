@@ -69,6 +69,22 @@ setInterval(function () {
     ).innerHTML = `${remainingTime.days}: ${remainingTime.hours}: ${remainingTime.minutes}: ${remainingTime.seconds}`;
 }, 1000);
 
+// scroll-to -top-button////
+const mybutton = document.querySelector(".topBtn");
+const show = document.querySelector(".show")
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 60) {
+        mybutton.classList.add("show")
+    }
+    else {
+        mybutton.classList.remove("show")
+    }
+})
+mybutton.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
+
+});
 // slider////////////////
 
 $('.responsive1').slick({

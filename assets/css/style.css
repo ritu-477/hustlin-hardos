@@ -362,12 +362,13 @@
     color: var(--fc-black);
 
 }
-.timer{
+
+.timer {
     font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-xl);
-        font-weight: 600;
-        line-height: 49.03px;
-        color: var(--fc-red);
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    line-height: 49.03px;
+    color: var(--fc-red);
 }
 
 /* ...........................timeline-section..................... */
@@ -607,23 +608,42 @@
     box-shadow: none !important;
     border: none !important;
 }
-.br-none{
+
+.br-none {
     border-bottom: none;
 }
+
 /* .............................footer........................................... */
-.text-clr{
+.text-clr {
     color: var(--fc-black);
 }
-.py-32{
+
+.py-32 {
     padding-top: 32px;
     padding-bottom: 24px;
 }
 
+.topBtn {
+    border-radius: 50px;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--fc-primary-black);
+    cursor: pointer;
+    padding: 10px;
 
+}
 
+.topBtn.show {
+    display: block;
+}
 
-
-
+.topBtn:active {
+    transform: translateY(5px);
+}
 
 
 /*............................................. media-quires...................................... */
