@@ -101,6 +101,10 @@
     max-width: 1140px;
 }
 
+.mt-top {
+    margin-top: -5px;
+}
+
 .about {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xmd);
@@ -108,8 +112,9 @@
     line-height: 21.79px;
     color: var(--fc-black);
 }
-.about:hover{
-color: var(--fc-black);
+
+.about:hover {
+    color: var(--fc-black);
     text-shadow: 0 0 .65px var(--fc-black-shadow), 0 0 .65px;
     transition: 1s;
 }
@@ -175,10 +180,11 @@ color: var(--fc-black);
     border-right: none;
     border-bottom: 1px solid var(--fc-black);
 }
-.read-btn:hover{
+
+.read-btn:hover {
     color: var(--fc-black);
-        text-shadow: 0 0 .65px var(--fc-black-shadow), 0 0 .65px;
-        transition: 1s;
+    text-shadow: 0 0 .65px var(--fc-black-shadow), 0 0 .65px;
+    transition: 1s;
 }
 
 .br-right {
@@ -265,6 +271,7 @@ color: var(--fc-black);
     border-right: none;
     border-bottom: 1px solid var(--fc-black);
 }
+
 .read-btn2:hover {
     color: var(--fc-black);
     text-shadow: 0 0 .65px var(--fc-black-shadow), 0 0 .65px;
@@ -312,7 +319,8 @@ color: var(--fc-black);
     border-bottom: 2px solid var(--fc-black);
     border-right: 2px solid var(--fc-black);
 }
-.curser{
+
+.curser {
     cursor: pointer;
 }
 
@@ -404,6 +412,7 @@ color: var(--fc-black);
     bottom: -2px;
     left: 50%;
     margin-left: -3px;
+    z-index: 0;
 }
 
 .container1 {
@@ -508,7 +517,7 @@ color: var(--fc-black);
     background-image: url("../images/sliderbg-image.png");
     padding-top: 45px;
     padding-bottom: 45px;
-     height: 326px;
+    height: 326px;
 }
 
 .executive {
@@ -672,8 +681,9 @@ color: var(--fc-black);
         flex-direction: column;
         display: flex;
         justify-content: space-between;
-        z-index: 2;
+        z-index: 3;
         cursor: pointer;
+
     }
 
     .iconbox>span {
@@ -681,6 +691,7 @@ color: var(--fc-black);
         height: 4px;
         background-color: var(--fc-black);
         border-radius: 10px;
+
     }
 
     .menulist {
@@ -692,14 +703,14 @@ color: var(--fc-black);
         width: 100%;
         flex-direction: column;
         top: 0;
-        z-index: 1;
+        z-index: 2;
         right: -100%;
         transition: all 300ms linear;
         background-color: var(--fc--primary-white);
     }
 
     .overflow-hidden {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
     ul.menulist.show {

@@ -56,10 +56,10 @@
             </div>
         </div>
     </marquee>
-    <header>
+    <header class="mt-top">
         <nav>
             <div class="container max-w1140">
-                <div class="d-flex align-items-center justify-content-between pt-2 pb-3">
+                <div class="d-flex align-items-center justify-content-between pt-3 pb-3">
                     <h4 class="hustlin text-center mx-auto mb-0">Hustlin' Hardos</h4>
                     <div class="d-none d-sm-block">
                         <div class="d-flex align-items-center gap-3">
@@ -224,12 +224,12 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="latest-twt mb-0">Latest Tweets</h2>
                 <div class="d-flex align-items-center gap-sm-5 gap-3">
-                    <span class="next-arrow d-flex">
+                    <span class="prew-arrow d-flex">
                         <svg class="curser" width="23" height="40" viewBox="0 0 23 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 2L3 20L21 38" stroke="black" stroke-width="3" />
                         </svg>
                     </span>
-                    <span class="prew-arrow d-flex">
+                    <span class="next-arrow d-flex">
                         <svg class="curser" width="23" height="40" viewBox="0 0 23 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2L20 20L2 38" stroke="black" stroke-width="3" />
                         </svg>
@@ -363,15 +363,15 @@
                             that will be powered by web3.
                         </p>
                         <div class="d-flex">
-                            <div class="de-box d-flex align-items-center justify-content-center">
-                                <svg class="curser" onclick="decrement()" width="11" height="4" viewBox="0 0 11 4"
+                            <div class="de-box d-flex align-items-center justify-content-center curser" onclick="decrement()">
+                                <svg  width="11" height="4" viewBox="0 0 11 4"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.9 3.864V0.516H10.26V3.864H0.9Z" fill="black" />
                                 </svg>
                             </div>
                             <div class="current-value" id="counter">100</div>
-                            <div class="in-box d-flex align-items-center justify-content-center">
-                                <svg class="curser" onclick="increment()" width="16" height="16" viewBox="0 0 16 16"
+                            <div class="in-box d-flex align-items-center justify-content-center curser" onclick="increment()">
+                                <svg  width="16" height="16" viewBox="0 0 16 16"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.82 15.852V9.336H0.34V6.924H6.82V0.407999H9.268V6.924H15.784V9.336H9.268V15.852H6.82Z"
