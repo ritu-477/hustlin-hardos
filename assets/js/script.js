@@ -1,13 +1,16 @@
 
-const iconbox = document.querySelector('.iconbox')
-const menulist = document.querySelector('.menulist')
+// const iconbox = document.querySelector('.iconbox')
+// const menulist = document.querySelector('.menulist')
 
-iconbox.addEventListener('click', function () {
-    menulist.classList.toggle('show')
+// iconbox.addEventListener('click', function () {
+//     menulist.classList.toggle('show')
+//     document.body.classList.toggle("overflow-hidden")
+// });
+
+function openNav() {
+    document.getElementById("navbar").classList.toggle("start-0");
     document.body.classList.toggle("overflow-hidden")
-});
-
-
+}
 // ............counter-value.............................
 
 const value = document.getElementById("value");

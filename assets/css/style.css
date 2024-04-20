@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 1s;
 }
 
 .bg-color1 {
@@ -168,6 +169,11 @@
 
 }
 
+.gap-80 {
+    gap: 140px;
+    display: flex;
+}
+
 .read-btn {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xmd);
@@ -185,10 +191,6 @@
     color: var(--fc-black);
     text-shadow: 0 0 .65px var(--fc-black-shadow), 0 0 .65px;
     transition: 1s;
-}
-
-.br-right {
-    border-right: 2px solid var(--fc-black);
 }
 
 /* ........................slider-section........................*/
@@ -460,14 +462,6 @@
     border-right: 2px solid var(--fc-black);
 }
 
-.pt-100 {
-    padding-top: 100px;
-}
-
-.pb-78 {
-    padding-bottom: 78px;
-}
-
 .phase1 {
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-xxmd);
@@ -503,6 +497,14 @@
     font-weight: 400;
     line-height: 27px;
     color: var(--fc-black);
+}
+
+.pt-100 {
+    padding-top: 50px;
+}
+
+.pb-78 {
+    padding-bottom: 50px;
 }
 
 /* .............................team-slider-section............ */
@@ -610,10 +612,14 @@
 
 .accordion-button:not(.collapsed)::after {
     background-image: url("../images/accordian-icon.svg");
+    width: 14px;
+    height: 4px;
     transform: var(--bs-accordion-btn-icon-transform);
 }
 
 .accordion-button::after {
+    width: 19px;
+    height: 18px;
     position: absolute;
     right: 0;
     flex-shrink: 0;
@@ -671,9 +677,13 @@
     border-bottom: 2px solid var(--fc-black);
 }
 
+.br-top {
+    border-top: 2px solid var(--fc-black);
+}
+
 
 /*............................................. media-quires...................................... */
-@media(max-width:576px) {
+@media(max-width:768px) {
     .iconbox {
         width: 30px;
         height: 25px;
@@ -683,7 +693,6 @@
         justify-content: space-between;
         z-index: 3;
         cursor: pointer;
-
     }
 
     .iconbox>span {
@@ -704,7 +713,7 @@
         flex-direction: column;
         top: 0;
         z-index: 2;
-        right: -100%;
+        left: -100%;
         transition: all 300ms linear;
         background-color: var(--fc--primary-white);
     }
@@ -713,9 +722,6 @@
         overflow: hidden !important;
     }
 
-    ul.menulist.show {
-        right: 0;
-    }
 }
 
 /* Media queries - Responsive timeline on screens less than 992px wide */
@@ -754,18 +760,13 @@
     .content {
         margin-bottom: 20px;
     }
+
+    .max-wimg {
+        max-width: 570px;
+    }
 }
 
 @media(min-width:576px) {
-    .br-top {
-        border-top: 2px solid var(--fc-black);
-    }
-
-
-    .nav-box {
-        border-left: 2px solid var(--fc-black);
-        border-right: 2px solid var(--fc-black);
-    }
 
     .heading-2 {
         line-height: 87.8px;
@@ -813,6 +814,29 @@
     .timer {
         line-height: 49.03px;
     }
+
+    .pt-100 {
+        padding-top: 80px;
+    }
+
+    .pb-78 {
+        padding-bottom: 78px;
+    }
+}
+
+@media(min-width:768px) {
+    .nav-box {
+        border-left: 2px solid var(--fc-black);
+        border-right: 2px solid var(--fc-black);
+    }
+
+    .pt-100 {
+        padding-top: 100px;
+    }
+
+    .pb-78 {
+        padding-bottom: 78px;
+    }
 }
 
 @media(min-width:992px) {
@@ -848,6 +872,10 @@
 
     .m-heading {
         line-height: 120px;
+    }
+
+    .br-right {
+        border-right: 2px solid var(--fc-black);
     }
 }
 
